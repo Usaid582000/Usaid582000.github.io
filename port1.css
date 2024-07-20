@@ -1,0 +1,149 @@
+* {
+    font-size: 27px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(shoeimg.jpg);
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: transparent;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.liner {
+color: whitesmoke;
+    font-size: 55px;
+    overflow: hidden;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+.liner2{
+color: whitesmoke;
+}
+.hbutton button{
+    display: inline-block;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -32em;
+    background: linear-gradient(45deg, rgb(31, 31, 31), darkcyan);
+    width: 100%;
+    height: 130%;
+    transform: rotate(40deg);
+}
+
+.shoe {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 70px;
+    color: lavenderblush;
+    /* font-family: ; */
+    font-weight: 300;
+    width: 120px;
+    cursor: pointer;
+}
+
+.headpanel {
+    padding-top: 40px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  */
+.hlink {
+    text-decoration: none;
+    color: rgb(140, 155, 158);
+    text-transform: uppercase;
+}
+
+.headpanel ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.headpanel ul li ::after {
+
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: lavenderblush;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+
+}
+
+.headpanel ul li :hover::after {
+    width: 100%;
+    transition-duration: 0.5s;
+}
+
+/**/
+section {
+    float: inline-end;
+    position: 40px;
+    width: 65%;
+}
+
+aside {
+    width: 30%;
+    position: relative;
+    float: right;
+}
+
+.hbutton button {
+    font-size: 35px;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid lavenderblush;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: padding 0.3s ease-in-out;
+}
+
+.hbutton button:hover {
+    background-color: lavenderblush;
+    color: black;
+    padding: 10px 20px;
+}
+
+/**/
+.shoeimg img {
+
+    width: 32em;
+    height: 22em;
+    rotate: 0deg;
+    filter: drop-shadow(30px 45px 40px #161616);
+    transition: all 0.3s ease-in-out;
+
+}
+.shoeimg img:hover{
+    width: 35em;
+    height: 25em;
+
+}
