@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website for my personal resume/protfolio">
+    <meta name="author" content="Usaid.D">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chonburi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="my_r.css">
+    <link rel="stylesheet" href="queries.css">
+    <title>My Resume website</title>
+</head>
+
+<body>
+    <nav id="desknav">
+        <div class="logo">
+            Usaid.D
+        </div>
+        <div>
+            <ul class="navlink">
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#experience">Experience</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="togg-nav">
+        <div class="logo">Usaid.D</div>
+        <div class="togg-menu">
+            <div class="togg-icon" onclick="toggMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggMenu()">About</a></li>
+                <li> <a href="#experience" onclick="toggMenu()">Experience</a></li>
+                <li> <a href="#projects" onclick="toggMenu()">Projects</a></li>
+                <li> <a href="#contact" onclick="toggMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_text">
+            <p class="sec-p1">Hello I'm</p>
+            <h1 class="title sectitle">Usaid.D</h1>
+            <p><span class="sec-p2"></span></p>
+            <div class="btn-container sec-btn">
+                <button class="btn btn-color1" onclick="window.open('./asset/myresume.pdf')">Download CV</button>
+                <button class="btn btn-color2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./asset/linkedin.png" alt="my linkedin page" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/usaid-d-8abb83292/'">
+                <img src="./asset/github.png" alt="my github page" class="icon"
+                    onclick="location.href='https://github.com/Usaid582000'">
+                <img src="./asset/upwork.png" alt="my upwork page" class="icon"
+                    onclick="location.href='https://www.upwork.com/freelancers/~016798fd01bb8c88ba'">
+                <img src="./asset/instagram.png" alt="my instagram page" class="icon"
+                    onclick="location.href='https://www.instagram.com/usaid_duldule4/?hl=en'">
+
+            </div>
+        </div>
+        <div class="section_pic-container">
+            <img src="./asset/usaidimg.png" alt="my img" class="sec-pic">
+        </div>
+    </section>
+    <section id="about">
+        <p class="sec-p1 about-p1">Get to Know More</p>
+        <h1 class="title about-title">About Me</h1>
+        <div class="section-container about-con">
+            <div class="section_pic-container">
+                <img src="./asset/usaidbg.jpeg" alt="my profile pic" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./asset/progress.png" alt="progress" class="icon">
+                        <h3>Experience</h3>
+                        <p>3+years<br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./asset/education.png" alt="progress" class="icon">
+                        <h3>Education</h3>
+                        <p>Pursing Data Science<br />Bachelor's degree In Comp.Sci & Engg (Data science)</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                                      Hi My name is Usaid, I'm a
+                        web developer with skills in HTML5, CSS3 and JavaScript, allowing me to build interactive
+                        websites (interfaces, shopping page, documentaries.). I’m currently expanding my knowledge in
+                        data Analysis and Graphic design. I'm a web developer with skills in HTML5, CSS3 and JavaScript,
+                        allowing me to build interactive websites (interfaces, shopping page, documentaries.). I’m
+                        currently expanding my knowledge in data Analysis and Graphic design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <p class="sec-p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="exp-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="exp-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>C </h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Expert</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="exp-sub-title">Part-time</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>3D Animations</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>2D Drawing</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./asset/tick.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Power BI</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="sec-p1">Check Out My</p>
+        <h1 class="title">Projects</h1>
+        <div class="exp-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/project1.png" alt="1st project" class="project-img">
+                    </div>
+                    <h2 class="exp-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color1 project-btn"
+                            onclick="location.href='https://github.com/Usaid582000/HTML-CSS_Blue_Sneaker_project'">Github</button>
+                        <button class="btn btn-color1 project-btn"
+                            onclick="location.href='https://github.com/Usaid582000/HTML-CSS_Blue_Sneaker_project'">Live
+                            Demo</button>
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/project2.png" alt="2nd project" class="project-img">
+                    </div>
+                    <h2 class="exp-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color1 project-btn"
+                            onclick="location.href='https://github.com/Usaid582000/HNSC'">Github</button>
+                        <button class="btn btn-color1 project-btn"
+                            onclick="location.href='https://github.com/Usaid582000/HNSC'">Live Demo</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <p class="sec-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="content-info-up-container">
+            <div class="contact-info-container">
+                <p>Send Mail at<a href="mailto: usersmail@gmail.com">
+                        <h2>dulduleusaid5@gmail.com</h2>
+                    </a></p>
+                <img src="./asset/email.png" alt="email icon" class="icon contact-icon" />
+            </div>
+            <div class="contact-info-container">
+                <img src="./asset/linkedin.png" alt=" linkedIn icon" class="icon contact icon" />
+                <p><a href="https://www.linkedin.com/in/usaid-d-8abb83292/">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul id="footerlink">
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#experience">Experience</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <script>
+        function toggMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".togg-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+        const typed = new Typed('.sec-p2', {
+            strings: ['Frontend Developer', 'Web designer'],
+            typedSpeed: 500,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true,
+            cursorChar: '_',
+        });
+    </script>
+</body>
+
+</html>

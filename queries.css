@@ -1,0 +1,69 @@
+@media (width<1200px) {
+    #desknav {
+        display: none;
+    }
+
+    #togg-nav {
+        display: flex;
+    }
+}
+
+@media (width<1170px) {
+    #profile {
+        margin-top: 5rem;
+        flex-wrap: wrap-reverse;
+    }
+#about{
+    margin: 2rem 0 0 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url(./asset/usaidbg.jpeg);
+}
+.details-container{
+    padding: 0.5rem;
+}
+.about-details-container{
+    padding-bottom: 3rem;
+}
+
+
+    section {
+        flex-wrap: wrap;
+        margin: 0 2rem;
+        padding-top: 6svh;
+        height: fit-content;
+    }
+
+    /* profile ends*/
+    .section-container {
+        margin: 0 1rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        font-size: 26px;
+    }
+
+    /**/
+}
+
+@media (width<830px) {
+.about-containers {
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+*{
+  font-size: 1rem;  
+}
+.sec-pic{
+width: 22rem;
+height: 22rem;
+}
+.about-pic{
+    width: 22rem;
+    height: 22rem;
+}
+.project-img{
+    width: 25rem;
+    height: 14rem;
+}
+.btn-container button{
+    font-size: 1rem;
+}
+}
